@@ -1,38 +1,101 @@
-.App {
+/* App.css */
+.landing-page {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.landing-header {
+  background-color: #fff;
+  color: white;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+  border-radius: 10%; /* Add rounded border */
+  overflow: hidden;
+  }
+
+.app-name {
+  font-size: 24px;
+}
+
+.landing-main {
+  padding: 20px;
+}
+
+.coming-soon {
+  font-size: 56px;
+  color: #0f1d41;
+  margin-bottom: 10px;
+}
+
+.description {
+  color: #050505;
+  margin-bottom: 20px;
+}
+
+.email-section {
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 20px;
+}
+
+.email-input {
+  padding: 10px;
+  flex-wrap: wrap;
+  border: 1px solid #a8e4d7;
+  border-radius: 5px 0 0 5px;
+  width: 70%;
+}
+
+.notify-button {
+  background-color: #1e90ff;
   color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.notify-button:hover {
+  background-color: #0073e6;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.landing-footer {
+  background-color: #0f1d41;
+  color: white;
+  padding: 10px;
+}
+
+.footer-text {
+  font-size: 14px;
+}
+.landing-footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  background-color: #0f1d41;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+/* styles.css (or your preferred CSS file) */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #333;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  animation: spin 1s linear infinite;
 }
