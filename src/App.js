@@ -36,7 +36,7 @@ function App() {
         <div className="email-section">
           <input
             type="email"
-            placeholder="Enter email to get notified when we are up"
+            placeholder="Enter email to get notified on launch date"
             className="email-input"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
